@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets.js";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [tab, setTab] = useState("home");
 
   return (
     <div className="flex items-center justify-between py-6">
-      <h3 className="text-4xl font-mono text-orange-600 font-medium">
+      <Link to={"/"} className="text-4xl font-mono text-orange-600 font-medium">
         QuickBite
-      </h3>
+      </Link>
       <div className="text-2xl text-gray-600 font-mono">
         <span
           onClick={() => setTab("home")}
