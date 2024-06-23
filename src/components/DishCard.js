@@ -31,7 +31,7 @@ export default function DishCard(props) {
                   removeFromCart(props.id);
                 }}
                 alt=""
-                className="mx-1"
+                className="mx-1 cursor-pointer"
               />
               {cartItems[props.id]}
               <img
@@ -40,7 +40,7 @@ export default function DishCard(props) {
                   addToCart(props.id);
                 }}
                 alt=""
-                className="mx-1"
+                className="mx-1 cursor-pointer"
               />
             </div>
           )}
