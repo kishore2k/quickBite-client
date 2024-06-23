@@ -12,28 +12,28 @@ export default function Navbar() {
       <div className="text-2xl text-gray-600 font-mono">
         <span
           onClick={() => setTab("home")}
-          style={tab == "home" ? { textDecoration: "underline" } : {}}
+          style={tab === "home" ? { textDecoration: "underline" } : {}}
           className="mx-4 cursor-pointer"
         >
           home
         </span>
         <span
           onClick={() => setTab("menu")}
-          style={tab == "menu" ? { textDecoration: "underline" } : {}}
+          style={tab === "menu" ? { textDecoration: "underline" } : {}}
           className="mx-4 cursor-pointer"
         >
           menu
         </span>
         <span
           onClick={() => setTab("mobile-app")}
-          style={tab == "mobile-app" ? { textDecoration: "underline" } : {}}
+          style={tab === "mobile-app" ? { textDecoration: "underline" } : {}}
           className="mx-4 cursor-pointer"
         >
           mobile-app
         </span>
         <span
           onClick={() => setTab("contact-us")}
-          style={tab == "contact-us" ? { textDecoration: "underline" } : {}}
+          style={tab === "contact-us" ? { textDecoration: "underline" } : {}}
           className="mx-4 cursor-pointer"
         >
           contact-us
