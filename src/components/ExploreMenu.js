@@ -8,9 +8,11 @@ export default function ExploreMenu({ category, setCategory }) {
   }
 
   return (
-    <div className="py-8">
-      <h3 className="text-3xl font-extrabold mb-2">Explore our menu</h3>
-      <p className="text-xl font-mono">
+    <div className="py-8" id="ExploreMenu">
+      <h3 className="text-3xl font-extrabold mb-2 lg:text-left text-center">
+        Explore our menu
+      </h3>
+      <p className="text-xl font-mono lg:text-left text-center">
         Choose from a diverse menu featuring a delectable array of dishes
       </p>
       <div className="flex  overflow-x-scroll pt-6 my-2 hide-scrollbar">

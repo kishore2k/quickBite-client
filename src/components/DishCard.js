@@ -6,7 +6,7 @@ export default function DishCard(props) {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
 
   return (
-    <div className="w-96 p-4 bg-gray-50 m-3 rounded-3xl shadow">
+    <div className="md:w-96 w-80 p-4 bg-gray-50 m-3 rounded-3xl shadow">
       <img src={props.image} alt="" className="w-96 rounded-3xl" />
       <div className="pt-2">
         <h3 className="text-2xl font-mono font-md">{props.name}</h3>
