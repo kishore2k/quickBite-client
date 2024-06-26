@@ -13,7 +13,7 @@ export default function DishCard(props) {
         <img src={assets.rating_starts} alt="" />
         <p className="text-md font-mono my-2">{props.description}</p>
         <div className="flex justify-between items-center">
-          <h4 className="text-2xl">${props.price}</h4>
+          <h4 className="text-2xl text-orange-600">${props.price}</h4>
           {!cartItems[props.id] ? (
             <img
               src={assets.add_icon_white}

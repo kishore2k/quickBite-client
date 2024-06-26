@@ -5,6 +5,7 @@ export const StoreContext = createContext();
 
 export default function StoreContextProvider(props) {
   const [cartItems, setCartItems] = useState({});
+  const [showLogin, setShowLogin] = useState(false);
 
   function addToCart(itemId) {
     if (!cartItems[itemId]) {
@@ -30,6 +31,8 @@ export default function StoreContextProvider(props) {
     setCartItems,
     addToCart,
     removeFromCart,
+    showLogin,
+    setShowLogin,
   };
 
   return (

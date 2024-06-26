@@ -2,7 +2,7 @@ import { assets } from "../assets/assets";
 
 export default function Footer() {
   return (
-    <div className="font-mono bg-zinc-800 px-12 pt-12 pb-6 mt-6 " id="Footer">
+    <div className="font-mono bg-zinc-800 px-12 pt-12 pb-6 mt-6" id="Footer">
       <div className="flex justify-between lg:flex-row lg:text-left flex-col text-center">
         <div className="lg:w-4/6">
           <h1 className="text-4xl font-mono text-orange-600 font-medium">
