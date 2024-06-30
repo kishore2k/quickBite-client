@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext();
@@ -25,6 +25,18 @@ export default function StoreContextProvider(props) {
     });
   }
 
+  function getCartTotal() {
+    let total = 0;
+    for (let key in cartItems) {
+      food_list.forEach((element) => {
+        if (element._id === key) {
+          total += element.price * cartItems[key];
+        }
+      });
+    }
+    return total;
+  }
+
   const contextValue = {
     food_list,
     cartItems,
@@ -33,6 +45,7 @@ export default function StoreContextProvider(props) {
     removeFromCart,
     showLogin,
     setShowLogin,
+    getCartTotal,
   };
 
   return (
