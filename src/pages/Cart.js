@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { StoreContext } from "../context/StoreContext";
+import CartFooter from "../components/CartFooter";
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart } = useContext(StoreContext);
@@ -11,7 +12,7 @@ const Cart = () => {
     >
       <h1 className="text-4xl font-sans font-light">Cart</h1>
 
-      <div className="flex text-xl text-center justify-between xl:w-3/4 w-full">
+      <div className="flex text-sm md:text-base lg:text-xl text-center justify-between xl:w-3/4 w-full">
         <span className="w-1/6">Items</span>
         <span className="w-1/6">Title</span>
         <span className="w-1/6">Price</span>
@@ -25,7 +26,7 @@ const Cart = () => {
           return (
             <div
               key={index}
-              className="flex items-center text-xl text-center justify-between xl:w-3/4 w-full"
+              className="flex items-center text-sm md:text-base lg:text-xl text-center justify-between xl:w-3/4 w-full"
             >
               <span className="w-1/6">
                 <img className="w-16 mx-auto" src={item.image} alt="" />
@@ -50,6 +51,7 @@ const Cart = () => {
           return <></>;
         }
       })}
+      <CartFooter />
     </div>
   );
 };
